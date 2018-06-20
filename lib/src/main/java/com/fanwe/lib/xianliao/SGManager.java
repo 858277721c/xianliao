@@ -2,6 +2,7 @@ package com.fanwe.lib.xianliao;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.text.TextUtils;
 
 import org.xianliao.im.sdk.api.ISGAPI;
@@ -68,6 +69,30 @@ public class SGManager
     {
         if (mContext == null)
             throw new NullPointerException("you must invoke SGManager.getInstance().init(Activity) before this");
+    }
+
+    /**
+     * 分享图片
+     *
+     * @param bytes
+     * @return
+     */
+    public boolean shareImage(byte[] bytes)
+    {
+        final Bitmap bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+        return shareImage(bitmap);
+    }
+
+    /**
+     * 分享图片
+     *
+     * @param localPath
+     * @return
+     */
+    public boolean shareImage(String localPath)
+    {
+        final Bitmap bitmap = BitmapFactory.decodeFile(localPath);
+        return shareImage(bitmap);
     }
 
     /**
