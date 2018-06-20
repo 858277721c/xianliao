@@ -74,7 +74,7 @@ public class SGManager
     /**
      * 分享图片
      *
-     * @param bytes
+     * @param bytes 二进制数据
      * @return
      */
     public boolean shareImage(byte[] bytes)
@@ -86,7 +86,7 @@ public class SGManager
     /**
      * 分享图片
      *
-     * @param localPath
+     * @param localPath 本地图片路径
      * @return
      */
     public boolean shareImage(String localPath)

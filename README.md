@@ -8,7 +8,8 @@
 1. 配置appid
 在项目的[string.xml](https://github.com/zj565061763/xianliao/blob/master/lib/src/main/res/values/strings.xml)中配置appid
 ```xml
-<!DOCTYPE resources [<!ENTITY sg_appid "你的appid">]>
+<string name="sg_appid">IdL9CsA0EtAfm8HR</string>
+<string name="sg_auth_scheme">xianliaoIdL9CsA0EtAfm8HR</string>
 ```
 
 2. 初始化
@@ -23,5 +24,5 @@ SGManager.getInstance().getSGAPI();
 
 4. 分享图片
 ```java
-SGManager.getInstance().shareImage(Bitmap bitmap);
+SGManager.getInstance().shareImage(String localPath);
 ```

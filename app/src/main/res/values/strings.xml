@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">xianliao</string>
+
+    <string name="sg_appid">IdL9CsA0EtAfm8HR</string>
+    <string name="sg_auth_scheme">xianliaoIdL9CsA0EtAfm8HR</string>
 </resources>
