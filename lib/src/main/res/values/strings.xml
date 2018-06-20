@@ -1,0 +1,5 @@
+<!DOCTYPE resources [<!ENTITY sg_appid "IdL9CsA0EtAfm8HR">]>
+<resources>
+    <string name="sg_appid">&sg_appid;</string>
+    <string name="sg_auth_scheme">xianliao&sg_appid;</string>
+</resources>
